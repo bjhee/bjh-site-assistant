@@ -31,7 +31,7 @@ class BsaMeta {
     // Add the tags of the article to HTML meta keywords and separate them by comma
     function add_keyword() {
         // Only add for article page if option is turned on
-        if (BsaUtil::is_enabled(self::OPTION_KEYWORD) && is_singular()) {
+        if (BsaUtil::is_enabled(self::OPTION_KEYWORD) && is_single()) {
             echo '<meta name="keywords" content="';
             $postTags = get_the_tags();
             $toJoin = false;
@@ -55,7 +55,7 @@ class BsaMeta {
     // Add the summary of the article to HTML meta description
     function add_desc() {
         // Only add for article page if option is turned on
-        if (BsaUtil::is_enabled(self::OPTION_DESC) && is_singular()) {
+        if (BsaUtil::is_enabled(self::OPTION_DESC) && is_single()) {
             echo '<meta name="description" content="' . get_the_excerpt() . '" />';
         }
     }
