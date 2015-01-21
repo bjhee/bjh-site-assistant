@@ -14,7 +14,7 @@ class BsaCaptcha {
     
     // Be called when the plugin is installed
     static function install() {
-        // Do nothing
+        BsaUtil::enable(self::OPTION_NAME);
     }
     
     // Add field to setting menu
@@ -87,15 +87,15 @@ codeField.onkeyup = function() {
     
     // Add the number posted to backend
     static function validate_post_number($comment_data) {
-        $validation = $_POST[self::FIELD_VALID];
-        if ($validation) {
-            $code = $_POST[self::OPTION_NAME];
-            if ($code && ((intval($validation) - intval($code)) == self::CODE_DIFF)) {
-                return $comment_data;
+        if (BsaUtil::is_enabled(self::OPTION_NAME) && !is_user_logged_in()) {
+            $validation = intval($_POST[self::FIELD_VALID]);
+            $code = intval($_POST[self::OPTION_NAME]);
+            if (($validation - $code) != self::CODE_DIFF) {
+                wp_die('Error: Code is not valid!' . $code);
             }
         }
         
-        wp_die('Error: Code is not valid!');
+        return $comment_data;
     }
     
 }

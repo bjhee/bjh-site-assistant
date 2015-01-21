@@ -30,6 +30,12 @@ class BsaUtil {
         $bsa_options[$option_name] = self::ON;
     }
 
+    // Utility to set the value of a single option
+    static function set_value($option_name, $option_value) {
+        global $bsa_options;
+        $bsa_options[$option_name] = $option_value;
+    }
+
     // Utility to check if the option is turned on
     static function is_enabled($option_name) {
         $options = get_option(BsaConst::OPTIONS_GROUP);

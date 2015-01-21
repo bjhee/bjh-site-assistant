@@ -10,9 +10,12 @@ class BsaCopyright {
     // Reserved variable to be replaced
     const VAR_LINK = '%link%';
     
+    // Sample copy right info
+    const SAMPLE_INFO = '<p><span style="color:#878686">转载请注明出处：</span>%link%</p>';
+    
     // Be called when the plugin is installed
     static function install() {
-        // Do nothing
+        BsaUtil::set_value(self::OPTION_INFO, self::SAMPLE_INFO);
     }
     
     // Add field to setting menu
