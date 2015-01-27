@@ -7,8 +7,8 @@ Plugin Name: BJH Website Assistant
 Version:     1.0
 Author:      Billy.J.Hee 
 Author URI:  http://www.bjhee.com/
-Plugin URI:  https://github.com/bjhee/bjh-site-assistant
-Description: The WordPress plugin that assists your web site to work better (especially in China).
+Plugin URI:  http://www.bjhee.com/bjh-site-assistant
+Description: The WordPress plugin that provides small functions to help your website working better.
 License:     The MIT License - http://mit-license.org/
 */
 
