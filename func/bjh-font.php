@@ -16,7 +16,9 @@ class BsaFont {
     // Add field to setting menu
     static function setting_init() {
         // Setting field of Replace Google Fonts 
-        BsaUtil::add_field(self::OPTION_NAME, 'Replace Google Fonts', array(__CLASS__, 'add_field'));
+        BsaUtil::add_field(self::OPTION_NAME,
+                           __('Replace Google Fonts', 'bjh-site-assistant'),
+                           array(__CLASS__, 'add_field'));
     }
     
     // Generate HTML element for replace font option

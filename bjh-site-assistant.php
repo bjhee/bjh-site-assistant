@@ -1,4 +1,7 @@
 <?php
+// Multi language suppoort
+load_plugin_textdomain('bjh-site-assistant', false, '/bjh-site-assistant/lang/');
+
 /*
 Plugin Name: BJH Website Assistant
 Version:     1.0

@@ -21,17 +21,21 @@ class BsaCopyright {
     // Add field to setting menu
     static function setting_init() {
         // Setting field of Add Copyright Information
-        BsaUtil::add_field(self::OPTION_COPYRIGHT, 'Add Copyright Information', array(__CLASS__, 'add_field'));
+        BsaUtil::add_field(self::OPTION_COPYRIGHT,
+                           __('Add Copyright Information', 'bjh-site-assistant'),
+                            array(__CLASS__, 'add_field'));
     }
     
     static function add_field() {
         echo '<fieldset><p>';
         BsaUtil::add_checkbox(self::OPTION_COPYRIGHT);
-        echo '</p><p>Pls input the content to be displayed as copy right information. %link% is reserved as the link of the article.';
+        echo '</p><p>' .
+             __('Pls input the content to be displayed as copyright at the end of articles. ' 
+              . '%link% is reserved as the link of the article.', 'bjh-site-assistant');
         echo '</p><p><textarea class="large-text" name="' . BsaConst::OPTIONS_GROUP . '[' . self::OPTION_INFO . ']" '
            // Enable to input the copyright info only if the option is checked
            . (BsaUtil::is_enabled(self::OPTION_COPYRIGHT) ? '' : 'disabled')
-           . ' id="'. self::OPTION_INFO . '" placeholder="Please input the copy right info..." rows="3">'
+           . ' id="'. self::OPTION_INFO . '" rows="3">'
            . BsaUtil::get_value(self::OPTION_INFO)
            . '</textarea></p></fieldset><br />';
 ?>

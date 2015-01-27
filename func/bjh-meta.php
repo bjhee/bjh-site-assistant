@@ -14,8 +14,12 @@ class BsaMeta {
     // Add fields to setting menu
     static function setting_init() {
         // Setting field of Add Meta Keywords and Add Meta Description
-        BsaUtil::add_field(self::OPTION_KEYWORD, 'Add Meta Keywords', array(__CLASS__, 'setting_keyword'));
-        BsaUtil::add_field(self::OPTION_DESC, 'Add Meta Description', array(__CLASS__, 'setting_desc'));
+        BsaUtil::add_field(self::OPTION_KEYWORD,
+                           __('Add Meta Keywords', 'bjh-site-assistant'),
+                           array(__CLASS__, 'setting_keyword'));
+        BsaUtil::add_field(self::OPTION_DESC,
+                           __('Add Meta Description', 'bjh-site-assistant'),
+                           array(__CLASS__, 'setting_desc'));
     }
     
     // Generate HTML element for add meta keywords option

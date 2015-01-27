@@ -20,7 +20,9 @@ class BsaCaptcha {
     // Add field to setting menu
     static function setting_init() {
         // Setting field of Prevent Spam Comments
-        BsaUtil::add_field(self::OPTION_NAME, 'Prevent Spam Comments', array(__CLASS__, 'add_field'));
+        BsaUtil::add_field(self::OPTION_NAME,
+                           __('Prevent Spam Comments', 'bjh-site-assistant'),
+                            array(__CLASS__, 'add_field'));
     }
     
     static function add_field() {
@@ -42,13 +44,14 @@ class BsaCaptcha {
             $label_start = strpos($captcha_field, '>', strpos($captcha_field, '<label ')) + 1;
             $label_length = strpos($captcha_field, '</label>', $name_start) - $label_start;
             $captcha_field = substr_replace($captcha_field, 
-                                            'Code:<em>' . $number . '</em>', 
+                                            __('Code', 'bjh-site-assistant') . ':<em>' . $number . '</em>', 
                                             $label_start, 
                                             $label_length);
             
             // Add placeholder to remind user
             $label_start = strpos($captcha_field, '<input ') + 6;
-            $placeholder = ' placeholder="' . 'Please input the code aside' . '" alt="' . $number . '" ';
+            $placeholder = ' placeholder="' . __('Please input the code aside', 'bjh-site-assistant') 
+                         . '" alt="' . $number . '" ';
             $captcha_field = substr_replace($captcha_field, $placeholder, $label_start, 1);
             
             $fields[self::OPTION_NAME] = $captcha_field;
@@ -91,7 +94,7 @@ codeField.onkeyup = function() {
             $validation = intval($_POST[self::FIELD_VALID]);
             $code = intval($_POST[self::OPTION_NAME]);
             if (($validation - $code) != self::CODE_DIFF) {
-                wp_die('Error: Code is not valid!' . $code);
+                wp_die(__('Error: Code is not valid!', 'bjh-site-assistant'));
             }
         }
         

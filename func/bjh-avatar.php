@@ -13,7 +13,9 @@ class BsaAvatar {
     // Add field to setting menu
     static function setting_init() {
         // Setting field of Replace Gravatar Images
-        BsaUtil::add_field(self::OPTION_NAME, 'Replace Gravatar Images', array(__CLASS__, 'add_field'));
+        BsaUtil::add_field(self::OPTION_NAME, 
+                           __('Replace Gravatar Images', 'bjh-site-assistant'), 
+                           array(__CLASS__, 'add_field'));
     }
     
     // Generate HTML element for replace avatar option
