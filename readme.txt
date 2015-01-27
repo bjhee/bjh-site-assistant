@@ -1,39 +1,68 @@
 === BJH Website Assistant ===
 
 Contributors:      Billy.J.Hee
-Tags:              Ggoogle Font, Gravatar, copyright, SEO
-Donate link:       http://www.bjhee.com/ 
-Plugin URI:        https://github.com/bjhee/bjh-site-assistant
+Tags:              Google Font, Gravatar, copyright, SEO, Anti-spam
+Donate link:       https://github.com/bjhee/bjh-site-assistant
+Plugin URI:        http://www.bjhee.com/bjh-site-assistant
 Requires at least: 3.5
 Tested up to:      4.1
 Stable tag:        1.0
 License:           The MIT License
 License URL:       http://mit-license.org/
 
-The WordPress plugin that assists your web site to work better (especially in China).
+The WordPress plugin that provides small functions to help your website working better.
+
+该WordPress插件提供的小功能将有助你的网站运行的更好。
+
 
 == Description ==
-The WordPress plugin that assists your web site to work better (especially in China). It includes the functions to replace the Google fronts and Gravatar that are blocked in certain countries, and simple SEO functions for search engine friendly.
+The WordPress plugin that provides small functions to help your website working better, especially in "some countries". The functions this plugin currently provides:
+
+= Replace Google fonts by 360 mirror =
+Google fonts (such as Open Sans) are blocked in "some countries". Replace the font URL from Google fonts (fonts.googleapi.com) to 360 mirror (fonts.useso.com).
+
+= Replace Gravatar images by local default image =
+Gravatar images are blocked in "some countries". Replace the image URL from Gravatar (*.gravatar.com) to local default image.
+
+= Add page meta keywords and description =
+This function is for SEO (Search Engine Optimization). Meta keywords and description on page are more easily to be categorized by search engine. The function will add the tags of articles to page meta keywords, and add summary of articles to page meta description.
+
+= Prevent spam with validation code =
+The reader must input a 3-digits number of validation code before submit a comment. The number is random and will be verified by both front end and back end. This won't bring much inconvenient to user, but can be easily prevent most of the spam comments. It definitely has the hole for hackers to attack. But I believe for most of the websites, it is not worth for hackers to spent much time to break it.
+
+= Add article copyright =
+Add a simple claim at the end of the article to announce the copyright. Also, it provides a link for others to include when copying the article to other website.
+
 
 == Installation ==
-1. Unzip the download-package
+1. Uncompress the downloaded package
 2. Upload folder including all files to the "/wp-content/plugins/" directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Check your article source code for the META keywords tags.
+
 
 == Screenshots == 
 
-1. Add the meta keywords tag and fills up categories as keywords.
+1. Enable or disable the functions by settings
+
 
 == Frequently Asked Questions ==
-<b>Q: Why does it work for single post pages only?</b><br />
-No. Since only single posts are assigned categories, therefore, this plugin uses categories for keywords. So it only works with single posts.
+<b>Q: Where can I get the newest version of the plugin</b><br />
+Chinese plugin URL: http://www.bjhee.com/bjh-site-assistant
+Github project URL: https://github.com/bjhee/bjh-site-assistant
 
-<b>Q: Where can I send feedback about this plugin?</b><br />
-Plugin URI: http://www.quickonlinetips.com/archives/quick-meta-keywords-wordpress-plugin
+= Support =
+Contact me at http://www.bjhee.com/ or junhe0526@hotmail.com
 
 == Changelog ==
 
-= 1.0 =
+= 01/31/2015 1.0 =
+Initial release. Include the functions of: 
+* Replace Google fonts by 360 mirror
+* Replace Gravatar images by local default image
+* Add page meta keywords and description
+* Prevent spam with validation code
+* Add article copyright.
 
-* Initial release.
+
+== Upgrade Notice == 
+Nothing
