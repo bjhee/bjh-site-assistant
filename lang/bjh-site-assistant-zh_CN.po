@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bjh-site-assistant\n"
-"POT-Creation-Date: 2015-01-23 20:03+0800\n"
-"PO-Revision-Date: 2015-01-23 20:05+0800\n"
+"POT-Creation-Date: 2015-01-27 22:30+0800\n"
+"PO-Revision-Date: 2015-01-27 22:31+0800\n"
 "Last-Translator: \n"
 "Language-Team: BJHee <junhe0526@hotmail.com>\n"
 "Language: zh_CN\n"
@@ -25,20 +25,22 @@ msgid "BJH Site Assistant"
 msgstr "BJH网站小助手"
 
 #: settings.php:27
-msgid "Start Settings"
-msgstr "开始设置"
+msgid ""
+"Thanks for using BJH Website Assistant. This plugin provides small functions "
+"to help your website working better."
+msgstr "感谢使用BJH网站小助手。该插件提供的小功能将有助你的网站运行的更好。"
 
-#: settings.php:33
+#: settings.php:35
 msgid "Save Change"
 msgstr "保存修改"
 
-#: settings.php:44
-msgid "Settings"
-msgstr "设置"
+#: settings.php:46
+msgid "Basic Settings"
+msgstr "基本设置"
 
-#: settings.php:51
-msgid "Please input the setting."
-msgstr "请输入设置"
+#: settings.php:53
+msgid "Please enable or disable the functions by clicking the check box below."
+msgstr "请点击下面的勾选框来启用或禁止相关功能。"
 
 #: func/bjh-captcha.php:24
 msgid "Prevent Spam Comments"
@@ -56,14 +58,18 @@ msgstr "请输入旁边的验证码"
 msgid "Error: Code is not valid!"
 msgstr "错误：验证码不正确！"
 
-#: func/bjh-copyright.php:25
+#: func/bjh-copyright.php:17
+msgid "Please include the original link when you copy it"
+msgstr "转载请注明出处"
+
+#: func/bjh-copyright.php:26
 msgid "Add Copyright Information"
 msgstr "添加版权信息"
 
-#: func/bjh-copyright.php:33
+#: func/bjh-copyright.php:34
 msgid ""
-"Pls input the content to be displayed as copyright at the end of articles. "
-"%link% is reserved as the link of the article."
+"Please input the content to be displayed as copyright at the end of "
+"articles. %link% is reserved as the link of the article."
 msgstr ""
 "请输入文章版权信息，该信息会在文章末尾显示出来。%link%是保留字用来显示该文章"
 "链接。"
@@ -83,6 +89,12 @@ msgstr "替换Gravatar头像"
 #: func/bjh-font.php:20
 msgid "Replace Google Fonts"
 msgstr "替换谷歌字体"
+
+#~ msgid "Start Settings"
+#~ msgstr "开始设置"
+
+#~ msgid "Please input the setting."
+#~ msgstr "请输入设置"
 
 #, fuzzy
 #~ msgid "Please input copyright of articles"

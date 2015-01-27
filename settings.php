@@ -24,13 +24,15 @@ class BsaSetting {
             <h2>' . __('BJH Website Assistant Settings', 'bjh-site-assistant') . '</h2>
             <div class="narrow">
                 <form action="options.php" method="post">
-                    <p>' . __('Start Settings', 'bjh-site-assistant') . '</p>';
+                    <p>' . __('Thanks for using BJH Website Assistant. This plugin provides small functions' 
+                            . ' to help your website working better.', 'bjh-site-assistant') . '</p>';
                     // The option to be submitted by form
                     settings_fields(BsaConst::OPTIONS_GROUP);
                     // List the registered settings to page
                     do_settings_sections(BsaConst::OPTIONS_PAGE);
                     echo '<p class="submit">
-                        <input name="submit" type="submit" class="button-primary" value="' . __('Save Change') . '" />
+                        <input name="submit" type="submit" class="button-primary" value="'
+                         . __('Save Change', 'bjh-site-assistant') . '" />
                     </p>
                 </form>
             </div>
@@ -41,14 +43,15 @@ class BsaSetting {
     static function setting_init() {
         register_setting(BsaConst::OPTIONS_GROUP, BsaConst::OPTIONS_GROUP);
         add_settings_section(BsaConst::OPTIONS_SECTION,
-                             __('Settings', 'bjh-site-assistant'),
+                             __('Basic Settings', 'bjh-site-assistant'),
                              array(__CLASS__, 'setting_section'),
                              BsaConst::OPTIONS_PAGE);
     }
 
     // The message to be displayed on top of setting section
     static function setting_section() {
-        echo '<p>' . __('Please input the setting.', 'bjh-site-assistant') . '</p>';
+        echo '<p>' . __('Please enable or disable the functions by clicking the check box below.'
+                      , 'bjh-site-assistant') . '</p>';
     }
 }
 

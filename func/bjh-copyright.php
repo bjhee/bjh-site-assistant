@@ -10,12 +10,13 @@ class BsaCopyright {
     // Reserved variable to be replaced
     const VAR_LINK = '%link%';
     
-    // Sample copy right info
-    const SAMPLE_INFO = '<p><span style="color:#878686">转载请注明出处：</span>%link%</p>';
-    
     // Be called when the plugin is installed
     static function install() {
-        BsaUtil::set_value(self::OPTION_INFO, self::SAMPLE_INFO);
+        // Sample copy right info
+        $sample_info =  '<p><span style="color:#878686">'
+                      . __('Please include the original link when you copy it', 'bjh-site-assistant')
+                      . ': </span>' . SELF::VAR_LINK . '</p>';
+        BsaUtil::set_value(self::OPTION_INFO, $sample_info);
     }
     
     // Add field to setting menu
@@ -30,7 +31,7 @@ class BsaCopyright {
         echo '<fieldset><p>';
         BsaUtil::add_checkbox(self::OPTION_COPYRIGHT);
         echo '</p><p>' .
-             __('Pls input the content to be displayed as copyright at the end of articles. ' 
+             __('Please input the content to be displayed as copyright at the end of articles. ' 
               . '%link% is reserved as the link of the article.', 'bjh-site-assistant');
         echo '</p><p><textarea class="large-text" name="' . BsaConst::OPTIONS_GROUP . '[' . self::OPTION_INFO . ']" '
            // Enable to input the copyright info only if the option is checked
