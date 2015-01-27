@@ -28,7 +28,7 @@ Gravatar images are blocked in "some countries". Replace the image URL from Grav
 This function is for SEO (Search Engine Optimization). Meta keywords and description on page are more easily to be categorized by search engine. The function will add the tags of articles to page meta keywords, and add summary of articles to page meta description.
 
 = Prevent spam with validation code =
-The reader must input a 3-digits number of validation code before submit a comment. The number is random and will be verified by both front end and back end. This won't bring much inconvenient to user, but can be easily prevent most of the spam comments. It definitely has the hole for hackers to attack. But I believe for most of the websites, it is not worth for hackers to spent much time to break it.
+The reader must input a 3-digits number of validation code before submit a comment. The number is random and will be verified by both front end and back end. This won't bring much inconvenient to user, but can be easily prevent most of the spam comments. It definitely has the hole for hackers to attack. However I believe for most of the websites, it is not worth for hackers to spent much time to break it.
 
 = Add article copyright =
 Add a simple claim at the end of the article to announce the copyright. Also, it provides a link for others to include when copying the article to other website.
