@@ -2,13 +2,21 @@
 The WordPress plugin that provides small functions to help your website working better.
 
 >Contributors:      Billy.J.Hee
+
 >Tags:              Google Font, Gravatar, copyright, SEO, Anti-spam
+
 >Donate link:       https://github.com/bjhee/bjh-site-assistant
+
 >Plugin URI:        http://www.bjhee.com/bjh-site-assistant
+
 >Requires at least: 3.5
+
 >Tested up to:      4.1
+
 >Stable tag:        1.0
+
 >License:           The MIT License
+
 >License URL:       http://mit-license.org/
 
 ## Description
@@ -40,7 +48,9 @@ Add a simple claim at the end of the article to announce the copyright. Also, it
 
 ## Frequently Asked Questions
 **Q: Where can I get the newest version of the plugin**
+
 Chinese plugin URL: http://www.bjhee.com/bjh-site-assistant
+
 Github project URL: https://github.com/bjhee/bjh-site-assistant
 
 #### Support
