@@ -1,5 +1,5 @@
-# BJH Website Assistant - A WordPress Plugin
-The WordPress plugin that provides small functions to help your website working better.
+# BJH Website Assistant
+The **WordPress plugin** that provides small functions to help your website working better.
 
 >Contributors:      Billy.J.Hee
 
