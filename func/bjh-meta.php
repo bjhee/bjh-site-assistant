@@ -72,4 +72,3 @@ add_action('admin_init', 'BsaMeta::setting_init');
 // Add action to page head
 add_action('wp_head', 'BsaMeta::add_keyword');
 add_action('wp_head', 'BsaMeta::add_desc');
-?>

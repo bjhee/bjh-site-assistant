@@ -55,4 +55,3 @@ class BsaUtil {
         return $root_url . '/wp-content/plugins/' . $plugin_name;
     }
 }
-?>

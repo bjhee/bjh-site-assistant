@@ -46,4 +46,3 @@ add_action('init', 'BsaFont::replace_font');
 //add_action('wp_enqueue_scripts', 'BsaFont::replace_font');
 // Add action when open the admin console only
 //add_action('admin_enqueue_scripts', 'BsaFont::replace_font');
-?>

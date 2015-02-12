@@ -21,4 +21,3 @@ register_activation_hook(__FILE__, 'bjh_site_assistant_install');
 
 // Register the function to be called when the plugin is disabled
 register_deactivation_hook(__FILE__, 'bjh_site_assistant_remove');
-?>

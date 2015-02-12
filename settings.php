@@ -60,4 +60,3 @@ add_action('admin_init', 'BsaSetting::setting_init');
 
 // Add the admin option menu section
 add_action('admin_menu', 'BsaSetting::setting_menu');
-?>

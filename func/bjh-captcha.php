@@ -114,4 +114,3 @@ add_action('comment_form', 'BsaCaptcha::validate_captcha');
 
 // Backend validation for the code
 add_filter('pre_comment_on_post', 'BsaCaptcha::validate_post_number');
-?>

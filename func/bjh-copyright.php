@@ -78,4 +78,3 @@ add_action('admin_init', 'BsaCopyright::setting_init');
 
 // Update the content
 add_filter('the_content',  'BsaCopyright::display_copyright');
-?>

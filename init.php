@@ -24,5 +24,3 @@ function bjh_site_assistant_install() {
 function bjh_site_assistant_remove() {
     delete_option(BsaConst::OPTIONS_GROUP);
 }
-
-?>

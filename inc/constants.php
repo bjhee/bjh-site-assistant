@@ -7,4 +7,3 @@ class BsaConst {
     const OPTIONS_GROUP = 'bjh_sa_options';
     
 }
-?>

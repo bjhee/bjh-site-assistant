@@ -39,4 +39,3 @@ add_action('admin_init', 'BsaAvatar::setting_init');
 
 // Filter the result from get_avatar() call
 add_filter('get_avatar', 'BsaAvatar::replace_avatar');
-?>
