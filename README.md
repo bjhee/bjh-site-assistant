@@ -22,8 +22,8 @@ The **WordPress plugin** that provides small functions to help your website work
 ## Description
 The WordPress plugin that provides small functions to help your website working better, especially in "some countries". The functions this plugin currently provides:
 
-#### Replace Google fonts by 360 mirror
-Google fonts (such as Open Sans) are blocked in "some countries". Replace the font URL from Google fonts (fonts.googleapi.com) to 360 mirror (fonts.useso.com).
+#### Replace Google fonts by Qihoo 360 mirror
+Google fonts (such as Open Sans) are blocked in "some countries". Replace the font URL from Google fonts (fonts.googleapi.com) to Qihoo 360 mirror (fonts.useso.com).
 
 #### Replace Gravatar images by local default image
 Gravatar images are blocked in "some countries". Replace the image URL from Gravatar (*.gravatar.com) to local default image.
@@ -59,7 +59,7 @@ Contact me at http://www.bjhee.com/ or junhe0526@hotmail.com
 ## Changelog
 #### 01/31/2015 v1.0
 Initial release. Include the functions of: 
-* Replace Google fonts by 360 mirror
+* Replace Google fonts by Qihoo 360 mirror
 * Replace Gravatar images by local default image
 * Add page meta keywords and description
 * Prevent spam with validation code
