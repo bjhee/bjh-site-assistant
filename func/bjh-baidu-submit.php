@@ -60,10 +60,10 @@ bsCheck.onclick = function() {
             $domain = home_url();
 
             // Strip http(s):// from the home URL
-            $pos = strrpos($domain, '//');
+            $pos = strrpos($domain, '://');
             if($pos != false)
             {
-                $domain = substr($domain,$pos + 1);
+                $domain = substr($domain,$pos + 3);
             }
 
             // Compose API URL
