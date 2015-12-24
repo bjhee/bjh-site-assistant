@@ -11,9 +11,9 @@ The **WordPress plugin** that provides small functions to help your website work
 
 >Requires at least: 3.5
 
->Tested up to:      4.1
+>Tested up to:      4.4
 
->Stable tag:        1.0
+>Stable tag:        1.1
 
 >License:           The MIT License
 
@@ -33,6 +33,9 @@ This function is for SEO (Search Engine Optimization). Meta keywords and descrip
 
 #### Prevent spam with validation code
 The anonymous reader must input a 3-digits number of validation code before submit a comment. The number is random and will be verified by both front end and back end. This won't bring much inconvenient to user, but can be easily prevent most of the spam comments. It definitely has the hole for hackers to attack. However I believe for most of the websites, it is not worth for hackers to spent much time to break it.
+
+#### Enable post link actively submitted to Baidu
+Baidu Zhanzhang platform published the active link submission function in 2015. Compare to Baidu Sitemap, it can submit the link of your article immediately when you post it, so that Baidu can archive it at once. It can also prevent the 3rd party site reposting your article and submit to Baidu beforehand. Note that you should request for a token on Baidu Zhanzhang, and enter the token in option page before enabling it. Also, make sure you have php5-curl module installed on your web server.
 
 #### Add article copyright
 Add a simple claim at the end of the article to announce the copyright. Also, it provides a link for others to include when copying the article to other website.
@@ -57,8 +60,11 @@ Github project URL: https://github.com/bjhee/bjh-site-assistant
 Contact me at http://www.bjhee.com/ or junhe0526@hotmail.com
 
 ## Changelog
+#### 12/24/2015 v1.1
+Add the function to enable Baidu post link active submission
+
 #### 01/31/2015 v1.0
-Initial release. Include the functions of: 
+Initial release. Include the functions of:
 * Replace Google fonts by Qihoo 360 mirror
 * Replace Gravatar images by local default image
 * Add page meta keywords and description

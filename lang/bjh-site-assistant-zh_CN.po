@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bjh-site-assistant\n"
 "POT-Creation-Date: 2015-01-28 22:09+0800\n"
-"PO-Revision-Date: 2015-01-28 22:09+0800\n"
+"PO-Revision-Date: 2015-12-24 15:21+0800\n"
 "Last-Translator: \n"
 "Language-Team: BJHee <junhe0526@hotmail.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -65,7 +65,7 @@ msgstr "转载请注明出处"
 msgid "Add Copyright Information"
 msgstr "添加版权信息"
 
-#: func/bjh-copyright.php:34
+#: func/bjh-copyright.php:37
 msgid ""
 "Please input the content to be displayed as copyright at the end of "
 "articles. %link% is reserved as the link of the article."
@@ -88,6 +88,14 @@ msgstr "替换Gravatar头像"
 #: func/bjh-font.php:20
 msgid "Replace Google Fonts"
 msgstr "替换谷歌字体"
+
+#: func/bjh-baidu-submit.php:19
+msgid "Baidu Link Submit"
+msgstr "百度主动链接推送"
+
+#: func/bjh-baidu-submit.php:29
+msgid "Please input token from Baidu Zhanzhang:"
+msgstr "请输入在百度站长平台申请的密钥(Token)："
 
 #~ msgid "Start Settings"
 #~ msgstr "开始设置"

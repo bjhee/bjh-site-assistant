@@ -4,17 +4,20 @@ require_once BSA_PATH . '/inc/constants.php';
 class BsaUtil {
     // The option value when it's turned on
     const ON = 'on';
-   
+
+    // Utility method to add a setting field to option page
+    // $option_name is the unique name of the new setting
+    // $display_name is the field name you want to be displayed on option page
+    // $display_func is the function to render the field content, e.g add a checkbox
     static function add_field($option_name, $display_name, $display_func) {
-        // Setting field of Replace Google Fonts 
         add_settings_field($option_name,
                            $display_name,
                            $display_func,
                            BsaConst::OPTIONS_PAGE,
                            BsaConst::OPTIONS_SECTION);
-    
+
     }
-    
+
     // Utility method to add setting of checkbox
     static function add_checkbox($option_name) {
         global $bsa_options;
@@ -43,9 +46,9 @@ class BsaUtil {
     }
 
     // Utility to get the value of a single option
-    static function get_value($option_name) {
+    static function get_value($option_name, $default = null) {
         $options = get_option(BsaConst::OPTIONS_GROUP);
-        return $options[$option_name];
+        return $options[$option_name] ? $options[$option_name] : $default;
     }
 
     // Utility to get the url of plugin path
