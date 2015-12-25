@@ -13,7 +13,7 @@ The **WordPress plugin** that provides small functions to help your website work
 
 >Tested up to:      4.4
 
->Stable tag:        1.1
+>Stable tag:        1.1.1
 
 >License:           The MIT License
 
@@ -60,6 +60,9 @@ Github project URL: https://github.com/bjhee/bjh-site-assistant
 Contact me at http://www.bjhee.com/ or junhe0526@hotmail.com
 
 ## Changelog
+#### 12/25/2015 v1.1.1
+Fix the issue that copyright info and baidu token will be lost when the option is disabled
+
 #### 12/24/2015 v1.1
 Add the function to enable Baidu post link active submission
 
