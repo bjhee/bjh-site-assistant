@@ -12,7 +12,8 @@ Description: The WordPress plugin that provides small functions to help your web
 License:     The MIT License - http://mit-license.org/
 */
 
-define('BSA_PATH', dirname(__FILE__));
+define('BSA_PATH', plugin_dir_path(__FILE__));
+define('BSA_URL', plugins_url('', __FILE__));
 require_once BSA_PATH . '/init.php';
 require_once BSA_PATH . '/settings.php';
 

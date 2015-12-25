@@ -57,4 +57,24 @@ class BsaUtil {
         $plugin_name = strrchr(BSA_PATH, DIRECTORY_SEPARATOR);
         return $root_url . '/wp-content/plugins/' . $plugin_name;
     }
+
+    // Utility to get the domain of the site
+    static function get_domain() {
+        $domain = home_url();
+        // Strip http(s):// from the home URL
+        $pos = strrpos($domain, '://');
+        if ($pos != false)
+        {
+            $domain = substr($domain, $pos + 3);
+        }
+        return $domain;
+    }
+
+    // Utility to enable checkbox to control the specific field
+    static function control_field($chkbox_id, $field_id) {
+        echo '
+        <script type="text/javascript">
+            controlField("'. $chkbox_id . '", "' . $field_id. '");
+        </script>';
+    }
 }

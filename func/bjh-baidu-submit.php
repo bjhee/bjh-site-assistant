@@ -27,26 +27,21 @@ class BsaBaiduSubmit {
         BsaUtil::add_checkbox(self::OPTION_NAME);
         // Add description
         echo '</p><p>' . __('Please input token from Baidu Zhanzhang:', 'bjh-site-assistant');
-        // Add text field, name OPTIONS_GROUP[OPTION_INFO] will let form submit to save to the right option
-        echo '</p><p><input type="text" class="large-text" id="' . self::OPTION_TOKEN . '" '
-           . (BsaUtil::is_enabled(self::OPTION_NAME) ? '' : 'disabled')
-           . ' name="' . BsaConst::OPTIONS_GROUP . '[' . self::OPTION_TOKEN . ']" value="'
-           . BsaUtil::get_value(self::OPTION_TOKEN, '')
-           . '"></p></fieldset><br />';
-?>
-<script type="text/javascript">
-var bsCheck = document.getElementById("<?php echo self::OPTION_NAME; ?>");
-
-bsCheck.onclick = function() {
-    var tokenField = document.getElementById("<?php echo self::OPTION_TOKEN; ?>");
-    if (bsCheck.checked) {
-        tokenField.disabled = false;
-    } else {
-        tokenField.disabled = true;
-    }
-}
-</script>
-<?php
+        // Add text field, name OPTIONS_GROUP[OPTION_TOKEN] will let form submit to save to the right option
+        $txtfield = '</p><p><input type="text" class="large-text" id="%s" name="%s[%s]" value="%s" %s>'
+                  . '</p></fieldset><br />';
+        echo sprintf($txtfield,
+                     self::OPTION_TOKEN,
+                     BsaConst::OPTIONS_GROUP,
+                     self::OPTION_TOKEN,
+                     BsaUtil::get_value(self::OPTION_TOKEN, ''),
+                     (BsaUtil::is_enabled(self::OPTION_NAME) ? '' : 'readonly'));
+        // echo '</p><p><input type="text" class="large-text" id="' . self::OPTION_TOKEN . '" '
+        //    . (BsaUtil::is_enabled(self::OPTION_NAME) ? '' : 'disabled')
+        //    . ' name="' . BsaConst::OPTIONS_GROUP . '[' . self::OPTION_TOKEN . ']" value="'
+        //    . BsaUtil::get_value(self::OPTION_TOKEN, '')
+        //    . '"></p></fieldset><br />';
+        BsaUtil::control_field(self::OPTION_NAME, self::OPTION_TOKEN);
     }
 
     // Add Baidu active link submit function
@@ -57,14 +52,7 @@ bsCheck.onclick = function() {
           && get_post_meta($post_id,'_baidu_submitted', true) != 1) {  // Check if already submitted
             $url = get_permalink($post_ID);
             $token = BsaUtil::get_value(self::OPTION_TOKEN, '');
-            $domain = home_url();
-
-            // Strip http(s):// from the home URL
-            $pos = strrpos($domain, '://');
-            if($pos != false)
-            {
-                $domain = substr($domain,$pos + 3);
-            }
+            $domain = BsaUtil::get_domain();
 
             // Compose API URL
             $api = sprintf(self::OPTION_BAIDU_APILINK, $domain, $token);

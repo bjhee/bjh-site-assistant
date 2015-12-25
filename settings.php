@@ -11,20 +11,20 @@ class BsaSetting {
                          BsaConst::OPTIONS_PAGE,
                          array(__CLASS__, 'setting_page'));
     }
-    
+
     // The main section of setting page
     static function setting_page() {
         // Reload the option settings
         global $bsa_options;
         $bsa_options = get_option(BsaConst::OPTIONS_GROUP);
-        
+
         // Generate the setting page section
         echo '
         <div class="wrap">
             <h2>' . __('BJH Website Assistant Settings', 'bjh-site-assistant') . '</h2>
             <div class="narrow">
                 <form action="options.php" method="post">
-                    <p>' . __('Thanks for using BJH Website Assistant. This plugin provides small functions' 
+                    <p>' . __('Thanks for using BJH Website Assistant. This plugin provides small functions'
                             . ' to help your website working better.', 'bjh-site-assistant') . '</p>';
                     // The option to be submitted by form
                     settings_fields(BsaConst::OPTIONS_GROUP);
@@ -53,7 +53,28 @@ class BsaSetting {
         echo '<p>' . __('Please enable or disable the functions by clicking the check box below.'
                       , 'bjh-site-assistant') . '</p>';
     }
+
+    // Register and include JS script for the plugin
+    static function admin_script() {
+        $utilJs = BSA_URL . '/js/util.js';
+        // Register the JS, the first arg "util.js" will be used in wp_enqueue_script()
+        wp_register_script('util.js', $utilJs);
+        // Safely add JS to wordpress pages
+        wp_enqueue_script( 'util.js');
+    }
+
+    // Register and include CSS style for the plugin
+    static function admin_styles() {
+        $styleCss = BSA_URL . '/css/style.css';
+        wp_register_style('style.css', $styleCss);
+        wp_enqueue_style('style.css');
+    }
 }
+
+// Include JS scriopt to wordpress admin backend
+add_action('admin_print_scripts', 'BsaSetting::admin_script');
+// Include CSS style to wordpress admin backend
+add_action('admin_print_styles', 'BsaSetting::admin_styles');
 
 // Init the admin option field
 add_action('admin_init', 'BsaSetting::setting_init');

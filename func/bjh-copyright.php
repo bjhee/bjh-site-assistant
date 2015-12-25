@@ -37,26 +37,21 @@ class BsaCopyright {
              __('Please input the content to be displayed as copyright at the end of articles. '
               . '%link% is reserved as the link of the article.', 'bjh-site-assistant');
         // Add text area, name OPTIONS_GROUP[OPTION_INFO] will let form submit to save to the right option
-        echo '</p><p><textarea class="large-text" id="'. self::OPTION_INFO . '" '
-           // Enable to input the copyright info only if the option is checked
-           . (BsaUtil::is_enabled(self::OPTION_NAME) ? '' : 'disabled')
-           . ' name="' . BsaConst::OPTIONS_GROUP . '[' . self::OPTION_INFO . ']" rows="3">'
-           . BsaUtil::get_value(self::OPTION_INFO, '')
-           . '</textarea></p></fieldset><br />';
-?>
-<script type="text/javascript">
-var crCheck = document.getElementById("<?php echo self::OPTION_NAME; ?>");
-
-crCheck.onclick = function() {
-    var infoArea = document.getElementById("<?php echo self::OPTION_INFO; ?>");
-    if (crCheck.checked) {
-        infoArea.disabled = false;
-    } else {
-        infoArea.disabled = true;
-    }
-}
-</script>
-<?php
+        // Enable to input the copyright info only if the option is checked
+        $txtArea = '</p><p><textarea class="large-text" id="%s" name="%s[%s]" %s rows="3">%s</textarea>'
+                 . '</p></fieldset><br />';
+        echo sprintf($txtArea,
+                     self::OPTION_INFO,
+                     BsaConst::OPTIONS_GROUP,
+                     self::OPTION_INFO,
+                     (BsaUtil::is_enabled(self::OPTION_NAME) ? '' : 'readonly'),
+                     BsaUtil::get_value(self::OPTION_INFO, ''));
+        // echo '</p><p><textarea class="large-text" id="'. self::OPTION_INFO . '" '
+        //    . (BsaUtil::is_enabled(self::OPTION_NAME) ? '' : 'disabled')
+        //    . ' name="' . BsaConst::OPTIONS_GROUP . '[' . self::OPTION_INFO . ']" rows="3">'
+        //    . BsaUtil::get_value(self::OPTION_INFO, '')
+        //    . '</textarea></p></fieldset><br />';
+        BsaUtil::control_field(self::OPTION_NAME, self::OPTION_INFO);
     }
 
     // Add copyright info at the end of the article
