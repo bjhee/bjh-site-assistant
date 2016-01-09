@@ -15,7 +15,7 @@ class BsaCopyright {
         // Sample copy right info
         $sample_info =  '<p><span style="color:#878686">'
                       . __('Please include the original link when you copy it', 'bjh-site-assistant')
-                      . ': </span>' . SELF::VAR_LINK . '</p>';
+                      . ': </span>' . self::VAR_LINK . '</p>';
         BsaUtil::set_value(self::OPTION_INFO, $sample_info);
     }
 
