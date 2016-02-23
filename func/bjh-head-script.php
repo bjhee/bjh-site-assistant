@@ -42,7 +42,7 @@ EOF;
              __('Add scripts to HTML page head. e.g. add Baidu Analytics script.', 'bjh-site-assistant');
         // Add text area, name OPTIONS_GROUP[OPTION_SCRIPT] will let form submit to save to the right option
         // Enable to input the script code only if the option is checked
-        $txtArea = '</p><p><textarea class="large-text" id="%s" name="%s[%s]" %s rows="3">%s</textarea>'
+        $txtArea = '</p><p><textarea class="large-text" id="%s" name="%s[%s]" %s rows="8">%s</textarea>'
                  . '</p></fieldset><br />';
         echo sprintf($txtArea,
                      self::OPTION_SCRIPT,

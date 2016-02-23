@@ -38,7 +38,7 @@ class BsaCopyright {
               . '%link% is reserved as the link of the article.', 'bjh-site-assistant');
         // Add text area, name OPTIONS_GROUP[OPTION_INFO] will let form submit to save to the right option
         // Enable to input the copyright info only if the option is checked
-        $txtArea = '</p><p><textarea class="large-text" id="%s" name="%s[%s]" %s rows="3">%s</textarea>'
+        $txtArea = '</p><p><textarea class="large-text" id="%s" name="%s[%s]" %s rows="2">%s</textarea>'
                  . '</p></fieldset><br />';
         echo sprintf($txtArea,
                      self::OPTION_INFO,
