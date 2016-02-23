@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bjh-site-assistant\n"
 "POT-Creation-Date: 2015-01-28 22:09+0800\n"
-"PO-Revision-Date: 2015-12-24 15:21+0800\n"
+"PO-Revision-Date: 2016-02-23 17:31+0800\n"
 "Last-Translator: \n"
 "Language-Team: BJHee <junhe0526@hotmail.com>\n"
 "Language: zh_CN\n"
@@ -97,12 +97,10 @@ msgstr "百度主动链接推送"
 msgid "Please input token from Baidu Zhanzhang:"
 msgstr "请输入在百度站长平台申请的密钥(Token)："
 
-#~ msgid "Start Settings"
-#~ msgstr "开始设置"
+#: func/bjh-head-script.php:31
+msgid "Add Script to Page"
+msgstr "添加网页脚本"
 
-#~ msgid "Please input the setting."
-#~ msgstr "请输入设置"
-
-#, fuzzy
-#~ msgid "Please input copyright of articles"
-#~ msgstr "请输入文章版权信息"
+#: func/bjh-baidu-submit.php:29
+msgid "Add scripts to HTML page head. e.g. add Baidu Analytics script."
+msgstr "在网页HTML页头中添加脚本，常用来添加分析脚本，比如百度统计代码。"
