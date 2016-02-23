@@ -35,7 +35,7 @@ This function is for SEO (Search Engine Optimization). Meta keywords and descrip
 The anonymous reader must input a 3-digits number of validation code before submit a comment. The number is random and will be verified by both front end and back end. This won't bring much inconvenient to user, but can be easily prevent most of the spam comments. It definitely has the hole for hackers to attack. However I believe for most of the websites, it is not worth for hackers to spent much time to break it.
 
 #### Allow user to add code to page head
-When using analytics tool like Baidu Analytics, it will ask you to add a piece of script before </head> tag. The plugin allow you to save the content of script on configuration, and it will automatically put it to page.
+When using analytics tool like Baidu Analytics, it will ask you to add a piece of script in HTML head tag. The plugin allow you to save the content of script on configuration, and it will automatically put it to page.
 
 #### Enable post link actively submitted to Baidu
 Baidu Zhanzhang platform published the active link submission function in 2015. Compare to Baidu Sitemap, it can submit the link of your article immediately when you post it, so that Baidu can archive it at once. It can also prevent the 3rd party site reposting your article and submit to Baidu beforehand. Note that you should request for a token on Baidu Zhanzhang, and enter the token in option page before enabling it. Also, make sure you have php5-curl module installed on your web server.
@@ -64,7 +64,7 @@ Contact me at http://www.bjhee.com/ or junhe0526@hotmail.com
 
 ## Changelog
 #### 2/23/2016 v1.2
-Add function that allow user to add script to HTML <head>. It is usually used to add utility code like Baidu Analytics.
+Add function that allow user to add script to HTML head tag. It is usually used to add utility code like Baidu Analytics.
 
 #### 1/9/2016 v1.1.2
 Fix the 'self' variable case sensitive issue
