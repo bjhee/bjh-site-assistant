@@ -1,6 +1,6 @@
 === BJH Website Assistant ===
 
-Contributors:      Billy.J.Hee
+Contributors:      bjhee
 Tags:              Google Font, Gravatar, copyright, SEO, Anti-spam, Baidu Submit
 Donate link:       https://github.com/bjhee/bjh-site-assistant
 Plugin URI:        http://www.bjhee.com/bjh-site-assistant
@@ -12,10 +12,9 @@ License URL:       http://mit-license.org/
 
 The WordPress plugin that provides small functions to help your website working better.
 
+== Description ==
 该WordPress插件提供的小功能将有助你的网站运行的更好。
 
-
-== Description ==
 The WordPress plugin that provides small functions to help your website working better, especially in "some countries". The functions this plugin currently provides:
 
 = Replace Google fonts by Qihoo 360 mirror =
