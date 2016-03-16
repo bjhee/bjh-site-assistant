@@ -1,0 +1,15 @@
+#backtop{
+    width:50px;
+    height:50px;
+    position:fixed;
+    bottom:5%;
+    right:2%;
+    top:auto;
+    display:block;
+    cursor:pointer;
+}
+
+*html #backtop{
+    position:absolute;
+    bottom:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
