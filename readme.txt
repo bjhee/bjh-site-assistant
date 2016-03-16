@@ -6,7 +6,7 @@ Donate link:       https://github.com/bjhee/bjh-site-assistant
 Plugin URI:        http://www.bjhee.com/bjh-site-assistant
 Requires at least: 3.5
 Tested up to:      4.4
-Stable tag:        1.2
+Stable tag:        1.3
 License:           The MIT License
 License URL:       http://mit-license.org/
 
