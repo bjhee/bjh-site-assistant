@@ -56,6 +56,7 @@ Add a simple claim at the end of the article to announce the copyright. Also, it
 == Frequently Asked Questions ==
 <b>Q: Where can I get the newest version of the plugin</b><br />
 Chinese plugin URL: http://www.bjhee.com/bjh-site-assistant
+WordPress plugin URL: https://wordpress.org/plugins/bjh-site-assistant/
 Github project URL: https://github.com/bjhee/bjh-site-assistant
 
 = Support =

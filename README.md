@@ -60,6 +60,8 @@ Add a simple claim at the end of the article to announce the copyright. Also, it
 
 Chinese plugin URL: http://www.bjhee.com/bjh-site-assistant
 
+WordPress plugin URL: https://wordpress.org/plugins/bjh-site-assistant/
+
 Github project URL: https://github.com/bjhee/bjh-site-assistant
 
 #### Support
