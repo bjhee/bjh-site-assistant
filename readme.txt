@@ -5,8 +5,8 @@ Tags:              Google Font, Gravatar, copyright, SEO, Anti-spam, Baidu Submi
 Donate link:       https://github.com/bjhee/bjh-site-assistant
 Plugin URI:        http://www.bjhee.com/bjh-site-assistant
 Requires at least: 3.5
-Tested up to:      4.4
-Stable tag:        1.3
+Tested up to:      4.7
+Stable tag:        1.3.1
 License:           The MIT License
 License URL:       http://mit-license.org/
 
@@ -55,14 +55,17 @@ Add a simple claim at the end of the article to announce the copyright. Also, it
 
 == Frequently Asked Questions ==
 <b>Q: Where can I get the newest version of the plugin</b><br />
-Chinese plugin URL: http://www.bjhee.com/bjh-site-assistant
-WordPress plugin URL: https://wordpress.org/plugins/bjh-site-assistant/
-Github project URL: https://github.com/bjhee/bjh-site-assistant
+* Chinese plugin URL: http://www.bjhee.com/bjh-site-assistant
+* WordPress plugin URL: https://wordpress.org/plugins/bjh-site-assistant/
+* Github project URL: https://github.com/bjhee/bjh-site-assistant
 
 = Support =
 Contact me at http://www.bjhee.com/ or junhe0526@hotmail.com
 
 == Changelog ==
+= 12/24/2016 v1.3.1 =
+Do not enable Google font URL replacement by default since Google font is accessible in China after Sep. 2016
+
 = 3/16/2016 v1.3 =
 * Allow user to add "Back-to-Top" button on blogs and pages.
 * Include JS and CSS of this site assistant plugin when enabling it.

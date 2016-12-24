@@ -10,7 +10,8 @@ class BsaFont {
 
     // Be called when the plugin is installed
     static function install() {
-        BsaUtil::enable(self::OPTION_NAME);
+        // Do not enable it by default since Google font is accessible in China after Sep. 2016
+        // BsaUtil::enable(self::OPTION_NAME);
     }
 
     // Add field to setting menu

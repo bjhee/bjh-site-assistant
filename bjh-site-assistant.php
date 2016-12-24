@@ -4,7 +4,7 @@ load_plugin_textdomain('bjh-site-assistant', false, '/bjh-site-assistant/lang/')
 
 /*
 Plugin Name: BJH Website Assistant
-Version:     1.3
+Version:     1.3.1
 Author:      Billy.J.Hee
 Author URI:  http://www.bjhee.com/
 Plugin URI:  http://www.bjhee.com/bjh-site-assistant
